@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC - Tribute Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/TributePage.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Raleway:400,600" rel="stylesheet"> 
+</head>
+<body>
+	<article id="main">
+		<h1 id="title" class="header"> Makoto Shinkai (新海 誠)</h1>
+		<p class="header">Anime Film Director</p>
+
+		<div id="img-div">
+			<img src="../img/MakotoShinkai.jpg" id="image" alt="Image of Makoto Shinkai">
+			<p id="img-caption">Shinkai during an inerview on the production of "Your Name"</p>
+		</div>
+		
+
+		<div id="tribute-info">
+			<p id="summary">
+				Makoto Shinki is a prominent anime film director 
+				in the industry.  In recent years he was produced film hits 
+				such as "Graden of Words" and "Your Name".  Influenced by 
+				titans such as Hayao Miyazaki, Makoto Shinki continutes to pave way 
+				to make his mark in anime history.
+			</p>
+
+			<p id="bio">
+				Shinkai began his career as a video game designer for the company Falcom.
+				In 1999 he release a monochrome film, "She and Her Cat" for the DoGA CG 
+				Animation contest in 2000, a contest for entry-level animators.
+				Upon winning the contest Shinkai would remain at Falcom but continue to 
+				create animations. In 2001 he quit his job at Falcom to pursue the production
+				of "Voices of a Distant Star" full time which would be released in 2002.
+				Shinkai's film releases would continue to be praised one after another by critics 
+				and fans alike.  His most recent release "Your Name" currently stands as the 
+				highest-grossing anime film of all time. A title previously held by "Spirited Away" directed by the reknown Hayao Miyazaki.
+				Shinkai's next filim "Weathering With You" is anticipated for release in 2019.
+			</p>
+
+			<figure id="filmography">
+				<figcaption>Filmography: </figcaption>
+				<ul>
+					<li>The World Be Enclosed (1998)</li>
+					<li>Other Worlds (1998)</li>
+					<li>She and Her Cat (1999)</li>
+					<li>Voices of a Distant Star (2002)</li>
+					<li>Egao (2003)</li>
+					<li>The Place Promised in Our Early Days (2004)</li>
+					<li>5 Centimeters per Second (2007)</li>
+					<li>Children Who Chase Lost Voices (2011)</li>
+					<li>Someone's Gaze (2013)</li>
+					<li>The Garden of Words (2013)</li>
+					<li>Your Name (2016)</li>
+					<li>Weathering With You (2019)</li>
+				</ul>	
+			</figure>
+
+			<div class="slideshow-container"> <!-- Slideshow base obtained from WC3 Schools -->
+			  <!-- Full-width images with number and caption text -->
+			  
+			  <div class="mySlides fade">
+			    <img src="../img/VoiceDistantStar.jpg" style="width:100%" alt="Movie Image">
+			  </div>
+			  
+			  <div class="mySlides fade">
+			    <img src="../img/PromisedDays.jpg" style="width:100%" alt="Movie Image">
+			  </div>
+
+			  <div class="mySlides fade">
+			    <img src="../img/5cmPer.jpg" style="width:100%" alt="Movie Image">
+			  </div>
+
+			  <div class="mySlides fade">
+			    <img src="../img/GardenOfWords.jpg" style="width:100%" alt="Movie Image">
+			  </div>
+
+			  <div class="mySlides fade">
+			    <img src="../img/YourName.png" style="width:100%" alt="Movie Image">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+
+			<br>
+			<br>
+
+			<a href="http://en.shinkaiworks.com/" id="tribute-link" target="_blank">For more information about his works, visit his website!</a>
+		</div>
+	</article>
+	<br>
+	<br>
+	<br>
+
+	 <script src="../js/TributePage.js"></script> 
+</body>
+</html>
