@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC - Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="../css/SurveyForm.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Raleway:400,600" rel="stylesheet"> 
+</head>
+<body>
+	<h1 id="title">Dining Hall Survey</h1>
+
+	<div id="mainContainer">
+		<p id="description">
+			Please complete the following survey regarding the current dining hall service and your usage.
+			Your feedback will help us improve and over all provide the students with a better dining experience.
+		</p>
+
+		<form id="survey-form">
+			<div class="row">
+				<div class="leftCol">
+					<label id="name-label">Name: </label>
+				</div>
+				<div class="rightCol">
+					<input type="text" id="name" placeholder="First Last Name">
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label id="email-label">Email: </label>
+				</div>
+				<div class="rightCol">
+					<input type="email" id="email" placeholder="JohnDoe@gmail.com">
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label id="dropdown-label">Year: </label>
+				</div>
+				<div class="rightCol">
+					<select id="dropdown">
+						<option value="freshman">Freshman</option>
+						<option value="sophomore">Sophomore</option>
+						<option value="junior">Junior</option>
+						<option value="senior">Senior</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label id="number-label">How often do you visit the Dining Hall a day? (On average): </label>
+				</div>
+				<div class="rightCol">
+					<input type="number" value="frequency" min="0" max="10">
+				</div>
+			</div>
+			
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Temperature of Food:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="temperature"></label>
+					<label>2<input type="radio" value="2" name="temperature"></label>
+					<label>3<input type="radio" value="3" name="temperature"></label>
+					<label>4<input type="radio" value="4" name="temperature"></label>
+					<label>5<input type="radio" value="5" name="temperature"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Visual Appeal of Food:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="appeal"></label>
+					<label>2<input type="radio" value="2" name="appeal"></label>
+					<label>3<input type="radio" value="3" name="appeal"></label>
+					<label>4<input type="radio" value="4" name="appeal"></label>
+					<label>5<input type="radio" value="5" name="appeal"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Taste of Food:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="taste"></label>
+					<label>2<input type="radio" value="2" name="taste"></label>
+					<label>3<input type="radio" value="3" name="taste"></label>
+					<label>4<input type="radio" value="4" name="taste"></label>
+					<label>5<input type="radio" value="5" name="taste"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Freshness of Food:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="freshness"></label>
+					<label>2<input type="radio" value="2" name="freshness"></label>
+					<label>3<input type="radio" value="3" name="freshness"></label>
+					<label>4<input type="radio" value="4" name="freshness"></label>
+					<label>5<input type="radio" value="5" name="freshness"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Menu Variety:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="variety"></label>
+					<label>2<input type="radio" value="2" name="variety"></label>
+					<label>3<input type="radio" value="3" name="variety"></label>
+					<label>4<input type="radio" value="4" name="variety"></label>
+					<label>5<input type="radio" value="5" name="variety"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Staff Appearance:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="staffAppearance"></label>
+					<label>2<input type="radio" value="2" name="staffAppearance"></label>
+					<label>3<input type="radio" value="3" name="staffAppearance"></label>
+					<label>4<input type="radio" value="4" name="staffAppearance"></label>
+					<label>5<input type="radio" value="5" name="staffAppearance"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Staff Friendliness:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="staffFriend"></label>
+					<label>2<input type="radio" value="2" name="staffFriend"></label>
+					<label>3<input type="radio" value="3" name="staffFriend"></label>
+					<label>4<input type="radio" value="4" name="staffFriend"></label>
+					<label>5<input type="radio" value="5" name="staffFriend"></label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Dining Hall Cleanliness:    </label>
+				</div>
+				<div class="rightCol">
+					<label>1<input type="radio" value="1" name="cleanliness"></label>
+					<label>2<input type="radio" value="2" name="cleanliness"></label>
+					<label>3<input type="radio" value="3" name="cleanliness"></label>
+					<label>4<input type="radio" value="4" name="cleanliness"></label>
+					<label>5<input type="radio" value="5" name="cleanliness"></label>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>If you do not go to the dining hall. How do you obtain your food? Choose all that apply: </label>
+				</div>
+				<div class="rightCol">
+					<ul style="list-style: none;" id="checkList">
+						<li><label>Bring food from home or eat at home<input type="checkbox" value="1" name="otherFood"></label></li>
+						<li><label>Go to a fast food option (eg: McDonalds)<input type="checkbox" value="2"  name="otherFood"></label></li>
+						<li><label>Go to a reastaurant (eg: Applebes)<input type="checkbox" value="3"  name="otherFood"></label></li>
+						<li><label>Go to a lunch cart/truck<input type="checkbox" value="4"  name="otherFood"></label></li>
+					</ul>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="leftCol">
+					<label>Any other comments or suggestions: </label>
+				</div>
+				<div class="rightCol">
+					<textarea name="comments" placeholder="Comments and suggestions here." id="commentArea"></textarea>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+
+			<input type="submit" id="submit" name="submitAll">
+			
+
+		</form>
+	</div>
+</body>
+</html>

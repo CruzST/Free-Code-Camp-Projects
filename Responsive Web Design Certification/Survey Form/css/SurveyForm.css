@@ -1,0 +1,82 @@
+{
+	border: 1px solid black;
+}
+
+/*
+GOOGLE FONTS
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+*/
+body {
+	background-color: #9fdfdf;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+}
+
+#title {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+#mainContainer {
+	background-color: #e6ffff;
+	margin-left: 400px;  /* < 1000 make it 200*/
+	margin-right: 400px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#description {
+	padding-top: 20px;
+}
+
+.leftCol {
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+	padding-right: 10px;
+	vertical-align: top;
+}
+
+.rightCol {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#checkList {
+	margin: 0;
+	padding-left: 0px;
+}
+
+#submit {
+	margin-bottom: 20px;
+	background-color: #59ace0;
+  	border-radius: 4px;
+  	color: white;
+  	font-size: 1em;
+  	height: 40px;
+  	width: 96px;
+  	border: 0px solid;
+}
+
+#commentArea {
+	width: 200%;
+	height: 200px;
+	resize: none;
+	overflow: auto;
+}
+
+
+
+
+@media (max-width: 1500px) {
+	#mainContainer {
+		margin-left: 150px;
+		margin-right: 150px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
