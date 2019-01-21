@@ -1,0 +1,59 @@
+/*
+GOOGLE FONTS
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+*/
+
+ {
+	border: 1px solid black;
+}
+
+#outerContainer {
+	margin-top: 80px;
+}
+
+#about {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.inactiveLink {
+	pointer-events: none;
+   	cursor: default;
+}
+
+.nav-link {
+	padding-left: 0px !important;
+	font-size: 20px;
+}
+
+.bandImage {
+	width: 353px;
+	height: 361px;
+}
+
+.bandHeader {
+	width: 100%;
+}
+
+.flexRow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flexColLeft {
+	flex: 40%;
+}
+
+.flexColRight {
+	flex: 60%;
+}
+
+#logoIcon {
+	pointer-events: none;
+   	cursor: default;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
