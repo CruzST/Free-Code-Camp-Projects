@@ -50,7 +50,7 @@
 	</div> <!-- End header and nav bar -->
 
 
-	<div class="container-fluid" id="outerContainer"> <!-- Begin outer container -->
+	<div class="container" id="outerContainer"> <!-- Begin outer container -->
 		<br>
 		<!-- About bang dream -->
 		<div class="container" id="about">
@@ -62,17 +62,22 @@
 				<br><br>Currently the the mobile application game, "BanG Dream! Girls Band Party!" ranked No. 38 in Japan for Top Grossing in 2018.
 			</p>
 
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/gZqWogaXxgM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="center-video">
 
-			<br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/gZqWogaXxgM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZyWUugyjlVQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZyWUugyjlVQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</div>
 		</div>
 
 		<br>
 
 		<!-- Popping party -->
-		<div class="container flexRow" id="PoPiPa">
+		<span class="anchor" id="PoPiPa"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">Poppin' Party</h3>
 			<div class="flexColLeft">
 				<img class="bandImage" src="../img/PoppinParty_PICO.png">
@@ -86,7 +91,8 @@
 		<br>
 
 		<!-- After Glow -->
-		<div class="container flexRow" id="AfterGlow">
+		<span class="anchor" id="AfterGlow"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">After Glow</h3>
 			<div class="flexColLeft">
 				<img class="bandImage" src="../img/Afterglow_PICO.png">
@@ -100,7 +106,8 @@
 		<br>
 
 		<!-- PasuPare -->
-		<div class="container flexRow" id="PasuPare">
+		<span class="anchor" id="PasuPare"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">Pastel Palettes</h3>
 			<div class="flexColLeft">
 				<img class="bandImage" src="../img/PastelPalettes_PICO.png">
@@ -114,7 +121,8 @@
 		<br>
 
 		<!-- Roselia -->
-		<div class="container flexRow" id="Roselia">
+		<span class="anchor" id="Roselia"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">Roselia</h3>
 			<div class="flexColLeft">
 				<img class="bandImage" src="../img/Roselia_PICO.png">
@@ -128,7 +136,8 @@
 		<br>
 
 		<!-- HaroHapi -->
-		<div class="container flexRow" id="HaroHapi">
+		<span class="anchor" id="HaroHapi"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">Hello, Happy World!</h3>
 			<div class="flexColLeft">
 				<img class="bandImage" src="../img/HelloHappyWorld_PICO.png">
@@ -142,19 +151,37 @@
 		<br>
 
 		<!-- Other -->
-		<div class="container flexRow" id="Other">
+		<span class="anchor" id="Other"></span>
+		<div class="container flexRow">
 			<h3 class="bandHeader">Other Bands</h3>
-			<div class="flexColLeft" style="flex: 50%;">
+			<br>
+			<br>
+			<div class="flexColLeft" style="flex: 50%; padding-right: 50px;">
 				<img src="../img/RAS.jpg" width="350" height="350">
 				<h4>RAISE A SUILEN</h4>
+				<br>
 				<iframe width="352" height="198" src="https://www.youtube.com/embed/oYI6rKw47iA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>Since the voice actresses of Afterglow, Pastel*Palettes or Hello, Happy World! are unable to play their characters' instrument, RAISE A SUILEN was created to allow the vocalists to have a chance to perform. However, the band also has their own original songs. The band members play roles of characters within the Bang Dream anime.</p>
 			</div>
-			<div class="flexColRight" style="flex: 50%;"> 
+			<div class="flexColRight" style="flex: 50%; padding-right: 50px;"> 
 				<img src="../img/GlitterGreen.jpg" width="350" height="350">
 				<h4>Glitter Green</h4>
+				<br>
 				<iframe width="352" height="198" src="https://www.youtube.com/embed/llD_yUgDOCw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>The group consists of four members, namely Ushigome Yuri on guitar and vocals, Uzawa Rii on bass, Wanibe Nanana on keyboard and Nijikki Hinako on drums. The band played a minor role within the anime however their songs do appear in the mobile game.</p>
+			</div>
+		</div>
+
+		<br>
+
+		<h4 style="text-align: center;">Suscribe for more information!</h4>
+		<div class="container flexRow" style="padding-bottom: 100px;">
+			<div class="center-div">
+				<form id="form">
+					<label id="email-label">Email: </label>
+					<input type="email" id="email" placeholder="Bandori_Fan@gmail.com">
+					<input type="submit" id="submit" name="submitAll">
+				</form>
 			</div>
 		</div>
 

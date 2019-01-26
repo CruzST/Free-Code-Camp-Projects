@@ -9,13 +9,23 @@ GOOGLE FONTS
 	border: 1px solid black;
 }
 
+body {
+	background: linear-gradient(to bottom right, #ffccff 34%, #ff66cc 100%) !important;
+	
+}
+
 #outerContainer {
 	margin-top: 80px;
+	background-color: #f9d5e5 !important;
 }
 
 #about {
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+
+#nav-bar {
+	background: #ff99ff;
 }
 
 .inactiveLink {
@@ -50,10 +60,27 @@ GOOGLE FONTS
 	flex: 60%;
 }
 
+.anchor{
+  display: block;
+  height: 75px; /*same height as header*/
+  margin-top: -75px;
+  visibility: hidden;
+}
+
 #logoIcon {
 	pointer-events: none;
    	cursor: default;
 	font-size: 30px;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.center-div {
+	margin: 0 auto; 
+  	padding: 20px;  
+}
+
+.center-video {
+	margin: 0 auto; 
+	width: 560px;
 }
