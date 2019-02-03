@@ -10,13 +10,15 @@ GOOGLE FONTS
 }
 
 body {
-	background: linear-gradient(to bottom right, #ffccff 34%, #ff66cc 100%) !important;
+	background: #a9def9 !important;
+	/*background: linear-gradient(to bottom right, #ffccff 34%, #ff66cc 100%) !important;*/
 	
 }
 
 #outerContainer {
-	margin-top: 80px;
-	background-color: #f9d5e5 !important;
+	margin-top: 60px;
+	background-color: #e4c1f9 !important;
+	/*background-color: #FEDCD2 !important;*/
 }
 
 #about {
@@ -25,7 +27,8 @@ body {
 }
 
 #nav-bar {
-	background: #ff99ff;
+	background: #ff99c8;
+	/*background: #ff99ff;*/
 }
 
 .inactiveLink {
