@@ -3,6 +3,7 @@ Intermediate Algorithm Scripting: Diff Two Arrays
 Intermediate Algorithm Scripting: Seek and Destroy
 Intermediate Algorithm Scripting: Wherefore art thou
 Intermediate Algorithm Scripting: Pig Latin
+Intermediate Algorithm Scripting: DNA Pairing
 */
 
 
@@ -181,4 +182,74 @@ translatePigLatin("paragraphs") should return "aragraphspay".
 translatePigLatin("glove") should return "oveglay".
 translatePigLatin("algorithm") should return "algorithmway".
 translatePigLatin("eight") should return "eightway".
+*/
+
+
+
+/********************************************************************************************
+*********************************************************************************************
+Intermediate Algorithm Scripting: DNA Pairing
+
+The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
+
+Base pairs are a pair of AT and CG. Match the missing element to the provided character.
+
+Return the provided character as the first element in each array.
+
+For example, for the input GCG, return [["G", "C"], ["C","G"],["G", "C"]]
+
+The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
+*/
+/* Solution 1 - Basic*/
+function pairElement(str) {
+  let returnArray = [];
+  let strArray = str.split("");
+
+  for (let i = 0; i < strArray.length; i++){
+    let localPair = [];
+    let pairLetter = pairCase(strArray[i]);
+    localPair.push(strArray[i], pairLetter);
+    returnArray.push(localPair);
+  }
+
+  return returnArray;
+}
+/* Function will return the corresponding letter */
+function pairCase(letter){
+  switch(letter){
+    case 'T':
+      return 'A';
+      break;
+    case 'A':
+      return 'T';
+      break;
+    case 'C':
+      return 'G';
+      break;
+    case 'G':
+      return 'C';
+      break;
+  }
+}
+
+/* Solution 2 - Medium*/
+
+function pairElement(str) {
+    //create object for pair lookup
+    var pairs = {
+      "A": "T",
+      "T": "A",
+      "C": "G",
+      "G": "C"
+    }
+    //split string into array of characters
+    var arr = str.split("");
+    //map character to array of character and matching pair
+    return arr.map(x => [x,pairs[x]]);
+  }
+
+/* Examples
+pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]].
+pairElement("TTGAG") should return [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]].
+pairElement("CTCTA") should return [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]].
 */

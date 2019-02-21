@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation Page</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/techDoc.css">
+	<!-- BOOTSTRAP 4 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="sidenav" id="navbar">
+		<header id="navbar-header"><h3>HTML Status Codes</h3></header>
+		<a href="#about" class="nav-link">About</a>
+		<a href="#1xx" class="nav-link">1xx Informational</a>
+		<a href="#2xx" class="nav-link">2xx Success</a>
+		<a href="#3xx" class="nav-link">3xx Redirection</a>
+		<a href="#4xx" class="nav-link">4xx Client Errors</a>
+		<a href="#5xx" class="nav-link">5xx Server Errors</a>
+	</div>
+
+	<main id="main-doc">
+		<!-- About -->
+		<h1>Technical Document for HTML Status Codes</h1>
+		<section class="main-section">
+			<header id="about">
+				<h3>About</h3>
+				
+			</header>
+
+				<p class="header-text">This is a list of Hypertext Transfer Protocol (HTTP) response status codes. Status codes are issued by a server in response to a client's request made to the server. It includes codes from IETF Request for Comments (RFCs), other specifications, and some additional codes used in some common applications of the Hypertext Transfer Protocol (HTTP). The first digit of the status code specifies one of five standard classes of responses. The message phrases shown are typical, but any human-readable alternative may be provided. Unless otherwise stated, the status code is part of the HTTP/1.1 standard (RFC 7231).</p>
+
+				<p class="header-text">All HTTP response status codes are separated into five classes (or categories). The first digit of the status code defines the class of response. The last two digits do not have any class or categorization role. There are five values for the first digit: </p>
+				<ul>
+					<li>1xx (Informational): The request was received, continuing process</li>
+					<li>2xx (Successful): The request was successfully received, understood, and accepted</li>
+					<li>3xx (Redirection): Further action needs to be taken in order to complete the request</li>
+					<li>4xx (Client Error): The request contains bad syntax or cannot be fulfilled</li>
+					<li>5xx (Server Error): The server failed to fulfill an apparently valid request</li>
+				</ul>
+			
+		</section>
+		<br/>
+		<hr>
+		<br/>
+
+		<!-- 1xx -->
+		<section class="main-section" id="1xx">
+			<header id="1xx">
+				<h3>1xx Informational Responses</h3>
+				<p class="header-text">An informational response indicates that the request was received and understood.<br/>It is issued on a provisional basis while request processing continues. It alerts the client to wait for a final response. The message consists only of the status line and optional header fields, and is terminated by an empty line. As the HTTP/1.0 standard did not define any 1xx status codes, servers must not send a 1xx response to an HTTP/1.0 compliant client except under experimental conditions.</p>
+			</header>
+			<div class="sub-section">
+				<code>100 Continue</code>
+				<p>This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.</p>
+				
+				<code>101 Switching Protocol</code>	
+				<p>This code is sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching to.</p>
+
+				<code>102 Processing (WebDAV; RFC 2518)</code>
+				<p>A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet.[7] This prevents the client from timing out and assuming the request was lost.</p>
+
+				<code>103 Early Hints</code>
+				<p>This status code is primarily intended to be used with the Link header to allow the user agent to start preloading resources while the server is still preparing a response.</p>
+
+			</div>			
+		</section>
+		<br/>
+		<hr>
+		<br/>
+
+		<!-- 2xx -->
+		<section class="main-section">
+			<header id="2xx">
+				<h3>2xx Success Responses</h3>
+				<p class="header-text">This class of status codes indicates the action requested by the client was received, understood and accepted.</p>	
+			</header>
+			<div class="sub-section">
+				<code>200  OK</code>
+				<p>The request has succeeded. The meaning of a success varies depending on the HTTP method:
+					<br/>GET: The resource has been fetched and is transmitted in the message body.
+					<br/>HEAD: The entity headers are in the message body.
+					<br/>PUT or POST: The resource describing the result of the action is transmitted in the message body.
+					<br/>TRACE: The message body contains the request message as received by the server</p>
+
+				<code>201 Created</code>
+				<p>The request has succeeded and a new resource has been created as a result of it. This is typically the response sent after a POST request, or after some PUT requests.</p>
+				
+				<code>202 Accepted</code>
+				<p>The request has been received but not yet acted upon. It is non-committal, meaning that there is no way in HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing.</p>
+
+				<code>203 Non-Authoritative Information</code>
+				<p>This response code means returned meta-information set is not exact set as available from the origin server, but collected from a local or a third party copy. Except this condition, 200 OK response should be preferred instead of this response.</p>
+
+				<code>204 No Content</code>
+				<p>There is no content to send for this request, but the headers may be useful. The user-agent may update its cached headers for this resource with the new ones.</p>
+
+				<code>205 Reset Content</code>
+				<p>This response code is sent after accomplishing request to tell user agent reset document view which sent this request.</p>
+
+				<code>206 Partial Content</code>
+				<p>This response code is used because of range header sent by the client to separate download into multiple streams.</p>
+
+				<code>207 Multi-Status (WebDAV; RFC 4918)</code>
+				<p>A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate</p>
+				
+				<code>208 Already Reported (WebDAV; RFC 5842)</code>
+				<p>Used inside a DAV: propstat response element to avoid enumerating the internal members of multiple bindings to the same collection repeatedly.</p>
+
+				<code>226 IM Used (RFC 3229)</code>
+				<p>The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.</p>
+			</div>
+		</section>
+		<br/>
+		<hr>
+		<br/>
+
+		<!-- 3xx -->
+		<section class="main-section">
+			<header id="3xx">
+				<h3>3xx Redirection Responses</h3>
+				<p class="header-text">This class of status code indicates the client must take additional action to complete the request.<br/>Many of these status codes are used in URL redirection.<br/>A user agent may carry out the additional action with no user interaction only if the method used in the second request is GET or HEAD. A user agent may automatically redirect a request. A user agent should detect and intervene to prevent cyclical redirects.</p>
+			</header>
+			<div class="sub-section">
+				<code>300 Multiple Choice</code>
+				<p>The request has more than one possible response. The user-agent or user should choose one of them. There is no standardized way of choosing one of the responses.</p>
+
+				<code>301 Moved Permanently</code>
+				<p>This response code means that the URI (Uniform Resource Identifier) of the requested resource has been changed. <br/>Probably, the new URI would be given in the response.</p>
+
+				<code>302 Found</code>
+				<p>This response code means that the URI of requested resource has been changed temporarily. New changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.</p>
+
+				<code>303 See Other (since HTTP/1.1)</code>
+				<p>The server sent this response to direct the client to get the requested resource at another URI with a GET request.</p>
+
+				<code>304 Not Modified (RFC 7232)</code>
+				<p>This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response</p>
+
+				<code>305 Use Proxy (since HTTP/1.1)</code>
+				<p>Was defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.</p>
+
+				<code>306 Switch Proxy</code>
+				<p>This response code is no longer used, it is just reserved currently. It was used in a previous version of the HTTP 1.1 specification.</p>
+
+				<code>307 Temporary Redirect (since HTTP/1.1)</code>
+				<p>The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request. This has the same semantics as the 302 Found HTTP response code, with the exception that the user agent must not change the HTTP method used: If a POST was used in the first request, a POST must be used in the second request.</p>
+
+				<code>308 Permanent Redirect (RFC 7538)</code>
+				<p>This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: If a POST was used in the first request, a POST must be used in the second request.</p>
+			</div>
+		</section>
+		<br/>
+		<hr>
+		<br/>
+
+		<!-- 4xx -->
+		<section class="main-section">
+			<header id="4xx">
+				<h3>4xx Client Error Responses</h3>
+				<p class="header-text">This class of status code is intended for situations in which the error seems to have been caused by the client. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition. These status codes are applicable to any request method. User agents should display any included entity to the user.</p>
+			</header>
+			<div class="sub-section">
+				<code>400 Bad Request</code>
+				<p>This response means that server could not understand the request due to invalid syntax.</p>
+
+				<code>401 Unauthorized (RFC 7235)</code>
+				<p>Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response.</p>
+
+				<code>402 Payment Required</code>
+				<p>This response code is reserved for future use. Initial aim for creating this code was using it for digital payment systems however this is not used currently.</p>
+
+				<code>403 Forbidden</code>
+				<p>The client does not have access rights to the content, i.e. they are unauthorized, so server is rejecting to give proper response. Unlike 401, the client's identity is known to the server.</p>
+
+				<code>404 Not Found</code>
+				<p>The server can not find requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 to hide the existence of a resource from an unauthorized client. This response code is probably the most famous one due to its frequent occurence on the web.</p>
+
+				<code>405 Method Not Allowed</code>
+				<p>The request method is known by the server but has been disabled and cannot be used. For example, an API may forbid DELETE-ing a resource. The two mandatory methods, GET and HEAD, must never be disabled and should not return this error code.</p>
+
+				<code>406 Not Acceptable</code>
+				<p>This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content following the criteria given by the user agent.</p>
+
+				<code>407 Proxy Authentication Required (RFC 7235)</code>
+				<p>This is similar to 401 but authentication is needed to be done by a proxy.</p>
+
+				<code>408 Request Timeout</code>
+				<p>This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection. This response is used much more since some browsers, like Chrome, Firefox 27+, or IE9, use HTTP pre-connection mechanisms to speed up surfing. Also note that some servers merely shut down the connection without sending this message.</p>
+
+				<code>409 Conflict</code>
+				<p>This response is sent when a request conflicts with the current state of the server.</p>
+
+				<code>410 Gone</code>
+				<p>This response would be sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource. The HTTP specification intends this status code to be used for "limited-time, promotional services". APIs should not feel compelled to indicate resources that have been deleted with this status code.</p>
+
+				<code>411 Length Required</code>
+				<p>Server rejected the request because the Content-Length header field is not defined and the server requires it.</p>
+
+				<code>412 Precondition Failed (RFC 7232)</code>
+				<p>The client has indicated preconditions in its headers which the server does not meet.</p>
+
+				<code>413 Payload Too Large (RFC 7231)</code>
+				<p>Request entity is larger than limits defined by server; the server might close the connection or return an Retry-After header field.</p>
+
+				<code>414 URI Too Long (RFC 7231)</code>
+				<p>The URI requested by the client is longer than the server is willing to interpret.</p>
+
+				<code>415 Unsupported Media Type</code>
+				<p>The media format of the requested data is not supported by the server, so the server is rejecting the request.</p>
+
+				<code>416 Range Not Satisfiable (RFC 7233)</code>
+				<p>The range specified by the Range header field in the request can't be fulfilled; it's possible that the range is outside the size of the target URI's data.</p>
+
+				<code>417 Expectation Failed</code>
+				<p>This response code means the expectation indicated by the Expect request header field can't be met by the server.</p>
+
+				<code>418 I'm a teapot (RFC 2324, RFC 7168)</code>
+				<p>The server refuses the attempt to brew coffee with a teapot.</p>
+
+				<code>421 Misdirected Request (RFC 7540)</code>
+				<p>The request was directed at a server that is not able to produce a response. This can be sent by a server that is not configured to produce responses for the combination of scheme and authority that are included in the request URI.</p>
+
+				<code>422 Unprocessable Entity (WebDAV; RFC 4918)</code>
+				<p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+
+				<code>423 Locked (WebDAV; RFC 4918)</code>
+				<p>The resource that is being accessed is locked.</p>
+
+				<code>424 Failed Dependency (WebDAV; RFC 4918)</code>
+				<p>The request failed due to failure of a previous request.</p>
+
+				<code>425 Too Early</code>
+				<p>Indicates that the server is unwilling to risk processing a request that might be replayed.</p>
+
+				<code>426 Upgrade Required</code>
+				<p>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an Upgrade header in a 426 response to indicate the required protocol(s).</p>
+
+				<code>428 Precondition Required (RFC 6585)</code>
+				<p>The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.</p>
+
+				<code>429 Too Many Requests (RFC 6585)</code>
+				<p>The user has sent too many requests in a given amount of time ("rate limiting").</p>
+
+				<code>431 Request Header Fields Too Large (RFC 6585)</code>
+				<p>The server is unwilling to process the request because its header fields are too large. The request MAY be resubmitted after reducing the size of the request header fields.</p>
+
+				<code>451 Unavailable For Legal Reasons (RFC 7725)</code>
+				<p>The user requests an illegal resource, such as a web page censored by a government.</p>		
+			</div>
+		</section>
+		<br/>
+		<hr>
+		<br/>
+
+		<!-- 5xx -->
+		<section class="main-section">
+			<header id="5xx">
+				<h3>5xx Server Error Responses</h3>
+				<p class="header-text">The server failed to fulfil a request. </br>Response status codes beginning with the digit "5" indicate cases in which the server is aware that it has encountered an error or is otherwise incapable of performing the request. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent condition. Likewise, user agents should display any included entity to the user. These response codes are applicable to any request method.</p>
+			</header>				
+			<div class="sub-section">
+				<code>500 Internal Server Error</code>
+				<p>The server has encountered a situation it doesn't know how to handle.</p>
+
+				<code>501 Not Implemented</code>
+				<p>The request method is not supported by the server and cannot be handled. The only methods that servers are required to support (and therefore that must not return this code) are GET and HEAD.</p>
+
+				<code>503 Service Unavailable</code>
+				<p>The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent. This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, contain the estimated time before the recovery of the service. The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.</p>
+
+				<code>504 Gateway Timeout</code>
+				<p>This error response is given when the server is acting as a gateway and cannot get a response in time.</p>
+
+				<code>505 HTTP Version Not Supported</code>
+				<p>The HTTP version used in the request is not supported by the server.</p>
+
+				<code>506 Variant Also Negotiates (RFC 2295)</code>
+				<p>The server has an internal configuration error: transparent content negotiation for the request results in a circular reference.</p>
+
+				<code>507 Insufficient Storage (WebDAV; RFC 4918)</code>
+				<p>The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process</p>
+
+				<code>508 Loop Detected (WebDAV; RFC 5842)</code>
+				<p>The server detected an infinite loop while processing the request.</p>
+
+				<code>510 Not Extended (RFC 2774)</code>
+				<p>Further extensions to the request are required for the server to fulfill it.</p>
+
+				<code>511 Network Authentication Required (RFC 6585)</code>
+				<p>The 511 status code indicates that the client needs to authenticate to gain network access.</p>
+
+			</div>
+		</section>
+		<br/>
+		
+	</main>
+</body>
+<!-- BOOT STRAP 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</html>
