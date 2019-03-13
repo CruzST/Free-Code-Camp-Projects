@@ -1,0 +1,11 @@
+#navbar {
+	background: #ff99c8;
+	height: 40px;
+	/*background: #ff99ff;*/
+}
+
+#outerContainer {
+	margin-top: 40px;
+	background-color: #e4c1f9 !important;
+	/*background-color: #FEDCD2 !important;*/
+}
