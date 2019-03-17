@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
 	<!-- BOOTSTRAP 4 CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
 </head>
 <body>
 	<!-- NAV BAR -->
@@ -13,8 +17,8 @@
 		<!-- Links -->
 		<ul class="nav">
 			<li><a href="#welcome-section">About</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#projects-section">Projects</a></li>
+			<li><a href="#contact-section">Contact</a></li>
 
 		</ul>
 	</nav>
@@ -22,17 +26,43 @@
 <div id="outerContainer">
 	<!-- WELCOME SECTION / ABOUT-->
 	<div id="welcome-section">
-		welcome section
+		<div id="welcome-message-container">
+			<h2>My name is Steven Cruz, an aspiring Software Developer!</h2>
+			<p>Welcome to my Portfolio Page created as a part of the Free Code Camp Curriculum!</p>
+		</div>
 	</div>
 
 	<!-- PROJECTS -->
-	<div id="projects">
-		projects section
+	<div id="projects-section">
+		<h3 class="section-header">These are some of the projects within the program</h3>
+
+		<div id="projects-container">
+			<a href="" class="project-tile">Tribute Page</a>
+			<a href="" class="project-tile">Technical Documentation Page</a>
+			<a href="" class="project-tile">Quote Machine</a>
+			<a href="" class="project-tile">Markdown Machine</a>
+			<a href="" class="project-tile">Calculator</a>
+			<a href="" class="project-tile">Javascript and Data Structures</a>	
+			<a href="https://github.com/CruzST/Free-Code-Camp-Projects"id="FCC-Github-Link" target="_blank">
+				<button type="button" class="btn">Full FCC Project List</button>
+			</a>
+			
+		</div>
+		
 	</div>
 
 	<!-- CONTACT -->
-	<div id="contact">
-		contact section
+	<div id="contact-section">
+		<h3 class="section-header">My Contact Information</h3>
+		<div id="icon-container">
+			<a href="https://github.com/CruzST">
+				<i class="fab fa-github-square" id="github-icon"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/stevencruz833/">
+				<i class="fab fa-linkedin" id="linkedin-icon"></i>	
+			</a>
+			<i class="fas fa-envelope-square" id="email-icon"></i>
+		</div>
 	</div>
 </div>
 
