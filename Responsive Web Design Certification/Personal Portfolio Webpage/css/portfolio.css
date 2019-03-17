@@ -1,5 +1,5 @@
 * {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	font-family: 'Raleway';
 }
 
@@ -20,19 +20,29 @@ p:nth-child(1){
 }
 
 #navbar {
-	background: #ff99c8;
+	background: #FF3B3F;
 	height: 40px;
 	/*background: #ff99ff;*/
 }
 
+nav > ul > li {
+	padding-right: 50px;
+	font-weight: bold;
+}
+
+nav > ul > li a {
+	font-size: 20px;
+	color: #A9A9A9;
+}
+
 #outerContainer {
 	margin-top: 40px;
-	background-color: #e4c1f9 !important;
+	background-color: #CAEBF2 !important;
 	/*background-color: #FEDCD2 !important;*/
 }
 
 #projects-section {
-	background-color: pink !important;
+	background-color: #EFEFEF !important;
 	height: 100vh;
 }
 
@@ -50,6 +60,7 @@ p:nth-child(1){
 .project-tile {
 	height: 178px;
 	width: 345px;
+	text-align: center;
 }
 
 #FCC-Github-Link {
