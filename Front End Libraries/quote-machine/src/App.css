@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Quicksand");
+/*
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+
+
+
+
+*/
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  font-size: 3em !important;
+  background-color: #282c34;
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#quote-box {
+  border: 1px solid black;
+  width: 50%;
+  padding: 0 20px 20px 20px;
+  margin: auto;
+}
+
+.author-show {
+  margin: 0;
+  font-family: "Quicksand", cursive;
+}
+
+#text {
+  font-size: 2.5em;
+  font-family: "Oswald", cursive;
+}
