@@ -1,5 +1,9 @@
 ![](quoteMachineImage.png)
+### Quote Machine
 
+Project a part of Free Code Camps Front End Libraries portion.  As with the other projects. Some liberties were taken and do not 100% comply with the test cases requested by FCC. However the intent is there and all the functionalities requested by FCC are present.
+
+### Boiler Plate:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
