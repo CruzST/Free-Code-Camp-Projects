@@ -1,0 +1,28 @@
+/*App.js*/
+#drum-pads {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+}
+
+/*DrumButton.js*/
+.drum-pad {
+  border: 1px solid black;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
