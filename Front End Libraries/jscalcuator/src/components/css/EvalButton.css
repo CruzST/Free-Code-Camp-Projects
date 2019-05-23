@@ -1,0 +1,12 @@
+.evalButton {
+  display: flex;
+  flex: 2;
+  height: 4em;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  outline: 1px solid #888;
+  background-color: #fe9241;
+  color: white;
+}
