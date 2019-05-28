@@ -1,0 +1,38 @@
+/************************
+  APP CSS
+*************************/
+.App {
+  text-align: center;
+}
+
+/************************
+  controlsWrapper CSS
+*************************/
+.controlsWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+/************************
+  Timer CSS
+*************************/
+.Timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/************************
+  SETTIMER CSS
+*************************/
+.SetTimer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SetTimerControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
