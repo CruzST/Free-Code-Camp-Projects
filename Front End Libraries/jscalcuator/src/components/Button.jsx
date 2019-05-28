@@ -9,6 +9,7 @@ const isNumber = val => {
 export const Button = props => (
   <div
     className={`buttonWrap ${isNumber(props.children) ? null : "operator"}`}
+    id={props.id}
     onClick={() => props.handleClick(props.children)}
   >
     {props.children}
